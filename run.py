@@ -17,10 +17,10 @@ with open(inputFile, 'rb') as csvfile:
             setInitial.append(row[0])
             dictInitial[row[0]] = 1
 
-print dictInitial
+# print dictInitial
 
-for item in dictInitial:
-    print item + ' -- ' + str(dictInitial[item])
+# for item in dictInitial:
+#     print item + ' -- ' + str(dictInitial[item])
 
 with open(outputFile, 'wb') as f:  # Just use 'w' mode in 3.x
     spamwriter = csv.writer(f, delimiter=' ',quotechar='|', quoting=csv.QUOTE_MINIMAL)
